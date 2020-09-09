@@ -12,6 +12,7 @@ import { AuthService } from 'src/app/_services/auth.service';
   styleUrls: ['./member-edit.component.scss']
 })
 export class MemberEditComponent implements OnInit {
+  
   user: User;
   photoUrl: string;
   @ViewChild('editForm', { static: true }) editForm: NgForm;
@@ -38,6 +39,4 @@ export class MemberEditComponent implements OnInit {
       this.alertify.error(error);
     });
   }
-
-  
 }
